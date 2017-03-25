@@ -3,14 +3,14 @@
 2. 支持文件断点下载；
 3. 后续新功能之后提交。
 
-二、用法
-
+二、代码示例（具体用法详见Demo）
 1. 文件带参上传用法
-    File file = new File(Environment.getExternalStorageDirectory(), "myDownload.txt");
+
+        File file = new File(Environment.getExternalStorageDirectory(), "myDownload.txt");
 
         RequestBody multipartBody = new MultipartBody.Builder()
                 .setType(MultipartBody.FORM)
-                .addFormDataPart("author", "xss_卡洛")
+                .addFormDataPart("author", "coral_卡洛")
                 .addFormDataPart("name", "myUpload", RequestBody.create(MEDIA_TYPE_MARKDOWN, file))
                 .build();
 
@@ -33,10 +33,6 @@
 
             @Override
             public void onSuccess(Object result) {
-                Log.e(TAG, "upload success" + (result instanceof File));
-                if (result != null) {
-                    Log.e(TAG, "result = " + result);
-                }
                 Toast.makeText(FileLoadActivity.this, "upload success", Toast.LENGTH_SHORT).show();
             }
 
