@@ -4,10 +4,7 @@
     android:id="@+id/activity_auto_resume_download"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
-
-    <!--tools:context="com.example.core.activity.FileLoadActivity"-->
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/edt_ip"

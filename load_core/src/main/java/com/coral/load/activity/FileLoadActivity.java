@@ -21,7 +21,9 @@ import com.coral.load.util.LoadSharedPrefUtil;
 
 import java.io.File;
 
-
+/**
+ * unused test activity
+ */
 public class FileLoadActivity extends AppCompatActivity implements View.OnClickListener {
 
     public static final MediaType MEDIA_TYPE_MARKDOWN = MediaType.parse("text/x-markdown;charset=utf-8");
